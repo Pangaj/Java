@@ -21,3 +21,7 @@
     5. LinkedTransferQueue
     6. PriorityBlockingQueue
     7. SynchronousQueue
+
+  ### 1. ArrayBlockingQueue
+      * Backed by Array
+      * Bounded in size. You to specify the total Capacity at the time of initialisation
