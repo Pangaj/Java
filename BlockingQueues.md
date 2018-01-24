@@ -55,3 +55,9 @@
     - Using **put** & **take** we could wait until the an element is freed or added into the current queue respectively.
     - But using **transfer** you could even **wait until another thread fetch your item from the queue**
   * This **cannot be done in any BlockingQueue** except ***SynchronousQueue***
+
+### 6. PriorityBlockingQueue
+  * Unbounded queue
+  * But, additional of nodes may fail if **OutOfMemoryError**
+  * If you need to traversal in order then use, Arrays.sort(pq.toArray())
+  * **drainTo** can used to remove some or all elements in priority order and place them in another collection
