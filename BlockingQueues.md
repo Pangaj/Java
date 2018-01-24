@@ -34,3 +34,11 @@
   * Size of array returns both expired and unexpired elements
   * An item is expired only if its delay is <= 0, i.e., must equal to or lesser than 0
   * Unexpired elements cannot be removed treated as normal elements
+
+### 3. LinkedBlockingDeque
+  * These are Optionally bounded, If unspecify Capacity then, it will take its bound as **MAX_VALUE**
+  * Deque refers to a **double-ended queue** where elements can be added to or removed from either the front (head) or back (tail)
+  * addFirst(Object o) will add element at first position
+  * takeLast() will get the element from its last position
+  * Other than this we have addLast() and takeFirst()
+  * removeFirstOccurance and removeLastOccurance
