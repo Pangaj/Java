@@ -48,3 +48,10 @@
   * High throughput than Array-based queue
   * But, less predictable performace in most concurrent appications
   * Dynamic creation of nodes
+
+### 5. LinkedTransferQueue
+  * Unbounded queue
+  * **transfer**
+    - Using **put** & **take** we could wait until the an element is freed or added into the current queue respectively.
+    - But using **transfer** you could even **wait until another thread fetch your item from the queue**
+  * This **cannot be done in any BlockingQueue** except ***SynchronousQueue***
