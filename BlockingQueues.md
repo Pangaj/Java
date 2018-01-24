@@ -22,6 +22,15 @@
     6. PriorityBlockingQueue
     7. SynchronousQueue
 
-  ### 1. ArrayBlockingQueue
-      * Backed by Array
-      * Bounded in size. You to specify the total Capacity at the time of initialisation
+### 1. ArrayBlockingQueue
+  * Backed by Array
+  * Bounded in size. You to specify the total Capacity at the time of initialisation
+
+### 2. DelayQueue
+  * Unbounded queue
+  * Can only taken if delay has expired
+  * If any delay has expired 1st, then queue will contain element as head.
+  * Delay units in nanoSeconds
+  * Size of array returns both expired and unexpired elements
+  * An item is expired only if its delay is <= 0, i.e., must equal to or lesser than 0
+  * Unexpired elements cannot be removed treated as normal elements
