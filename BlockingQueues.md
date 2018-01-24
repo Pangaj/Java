@@ -61,3 +61,11 @@
   * But, additional of nodes may fail if **OutOfMemoryError**
   * If you need to traversal in order then use, Arrays.sort(pq.toArray())
   * **drainTo** can used to remove some or all elements in priority order and place them in another collection
+
+### 7. SynchronousQueue
+  * **Does not have internal capacity** not event one
+  * Each insert wait for corresponding remove operation by another thread & vice versa
+  * **No iteration** as nothing to iterate
+  * If you try to add node in the queue,, then it will be head
+  * If no elements in queue, **poll()** will **return null**
+  * *Instead of put, if you use* ***add*** *then will throw exception as* **Queue full exception**
