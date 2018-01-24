@@ -69,3 +69,10 @@
   * If you try to add node in the queue,, then it will be head
   * If no elements in queue, **poll()** will **return null**
   * *Instead of put, if you use* ***add*** *then will throw exception as* **Queue full exception**
+
+
+  |          |Throws Exception|Special Value|  Blocks  |         Times Out           |
+  |:---------|:--------------:|:-----------:|:--------:|:---------------------------:|
+  | Insertion|    add ( O )   | offer ( O ) | put ( O )| Offer (O, timeout, timeUnit)|
+  | Deletion |   remove ( O ) |  poll ()    |  take () | poll (O, timeout, timeUnit) |
+  | Examine  |    element ()  |  peek ()    |
