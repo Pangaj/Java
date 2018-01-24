@@ -42,3 +42,9 @@
   * takeLast() will get the element from its last position
   * Other than this we have addLast() and takeFirst()
   * removeFirstOccurance and removeLastOccurance
+
+### 4. LinkedBlockingQueue
+  * These are Optionally bounded, If unspecify Capacity then, it will take its bound as **MAX_VALUE**
+  * High throughput than Array-based queue
+  * But, less predictable performace in most concurrent appications
+  * Dynamic creation of nodes
