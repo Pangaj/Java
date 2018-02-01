@@ -2,7 +2,7 @@
 
 - [Blocking Queues](#blocking-queues)
 - [Maps](#maps)
-- [Compare i7/i5 vs Xeon processor](#compare-i7/i5-vs-xeon-processor)
+- [Compare i7 vs Xeon processor](#compare-i7-vs-xeon-processor)
 
 
 ## Blocking Queues
@@ -94,7 +94,7 @@
 |      Implementation          |         Buckets             |            Red-Black trees              |Double-linked buckets|
 |      IsSynchronised          |     Not Synchronised        |            Not Synchronised             |  Not Synchronised   |
 
-## Compare i7/i5 vs Xeon processor
+## Compare i7 vs Xeon processor
 ### Intel Core i7/i5 Pros
 
  - **Overclocking**
