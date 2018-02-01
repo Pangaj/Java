@@ -2,6 +2,7 @@
 
 - [Blocking Queues](#blocking-queues)
 - [Maps](#maps)
+- [Compare i7/i5 vs Xeon processor](#compare-i7/i5-vs-xeon-processor)
 
 
 ## Blocking Queues
@@ -92,3 +93,48 @@
 |     Null value & keys        |         allowed             |              only values                |       allowed       |
 |      Implementation          |         Buckets             |            Red-Black trees              |Double-linked buckets|
 |      IsSynchronised          |     Not Synchronised        |            Not Synchronised             |  Not Synchronised   |
+
+## Compare i7/i5 vs Xeon processor
+### Intel Core i7/i5 Pros
+
+ - **Overclocking**
+  - Unlocked i5 and i7 processors are designed to be ***overclocked***, meaning **they can run at higher clock speeds** than what they’re qualified for, assuming the right voltage and BIOS settings
+  - This equates to free power and more value, a feature that Xeons do not have.
+
+- **GHz per dollar**
+  - For pure Gigahertz speed for the money, the 2011 and 1150 i7’s come out on top every time, making them the ***best value for single threaded applications***
+  - For example a **4-core i7-7700 running at 3.6GHz** retails for around ***$300***. The comparable **quad core Xeon running at that clock speed** will cost about ***$50 more***
+
+
+- **On board graphics**
+    - *i7 and i5 processors all come with onboard graphics, meaning a discrete video card is not required for video display*, whereas *Xeon processor-based PCs cannot be configured without discrete video*
+
+### Xeon Pros
+
+- **L3 cache**
+    - CPU caches are like small batches of memory that the processor keeps close by to speed up certain applications
+    - Most **Xeon processors have 15-30MB of L3 cache** depending on the model, close to ***double their i7 counterparts***
+    - This ***extra cache is one reason*** why Xeon’s are so much faster at **high demand workstation** applications than i7.
+
+
+- **Support for ECC RAM**
+    - ***Error Checking and Correction (ECC) RAM*** *detects and corrects most common data corruption before it occurs, eliminating the cause of many system crashes and translating to more stable overall performance*
+    - **Only Xeon processors support ECC RAM**
+
+
+- **More cores, multi CPU options**
+    - If your applications require as **many CPU cores as possible**, Xeon is what you need
+    - The **new Xeon v4 processors max out at 18 cores (36 after Hyperthreading)** whereas even the ***new Broadwell-E i7-6950X has just 10***
+    - Multi-CPU configurations are also only possible with Xeon, as is featured in our HD360MAX workstation
+
+
+- **Longevity (under heavy load)**
+    - Xeon processors are **qualified to handle heavier, more intensive loads day in and day out**
+    - For the serious workstation user, this can translate to better longevity over i7 counterparts
+
+
+- **Hyperthreading at a lower pricepoint**
+    - Most of the advantages of Xeon processors come to users in a higher price range, but not this one
+    - **All Xeons come with Hyperthreading**
+      - A process essentially **doubling the CPU cores through the creation of virtual cores**
+      - Where i5 processors do not, many users shopping in this price range may find the Xeons to be a better value, assuming their specific application supports these virtual cores
