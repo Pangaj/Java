@@ -3,7 +3,7 @@
 - [Blocking Queues](#blocking-queues)
 - [Maps](#maps)
 - [Compare i7 vs Xeon processor](#compare-i7-vs-xeon-processor)
-- [HashMap - Why not thread safe?] (#HashMap---Why-not-thread-safe?)
+- [HashMap - Why not thread safe?](#HashMap-Why-not-thread-safe?)
 
 ## Blocking Queues
 * A blocking queue is a queue that **blocks**,
