@@ -3,6 +3,7 @@
 - [Blocking Queues](#blocking-queues)
 - [Maps](#maps)
 - [Compare i7/i5 vs Xeon processor](#compare-i7/i5-vs-xeon-processor)
+- [HashMap - Why not thread safe?] (#HashMap---Why-not-thread-safe?)
 
 
 ## Blocking Queues
@@ -138,3 +139,19 @@
     - **All Xeons come with Hyperthreading**
       - A process essentially **doubling the CPU cores through the creation of virtual cores**
       - Where i5 processors do not, many users shopping in this price range may find the Xeons to be a better value, assuming their specific application supports these virtual cores
+
+## HashMap - Why not thread safe?
+- In general, HashMap uses **HashFunction** to compute index into array of buckets and sets
+- Most hashTable desinged imprefect HashFunction, which cause **collision**, where *same index for more than one key used widely because of more efficient*
+
+## [Collision](https://en.wikipedia.org/wiki/Collision_(computer_science)
+- A collision or classh occurs when **2 distinct input to same output**
+- **Unavoidable** whenever memebers of ***very large set are mapped to relatively short bit string***
+- Follows ***Pigeon hole principle*** where total birds are 10 and total box are 9, then one box will contain 2 pigeon
+
+## HashCode
+- ***Never misuse hashCode as a key***
+- ***Do not use hashCode in distributed applications***
+- *Whenever it is invoked on the same object more than once during an execution of a Java application, the hashCode method must consistently return the same integer, provided no information used in equals comparisons on the object is modified*
+- This integer ***need not remain consistent from one execution of an application to another*** execution of the same application
+- **Default hashCode** provided by object -> derived by *Mapping the memory address to integer value*.
