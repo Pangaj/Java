@@ -1,6 +1,7 @@
 # Learn Java ![Java](https://raw.githubusercontent.com/Pangaj/Java/master/java.jpg)
 
 - [Blocking Queues](#blocking-queues)
+- [Maps](#maps)
 
 
 ## Blocking Queues
@@ -81,3 +82,13 @@
   | Insertion|    add ( O )   | offer ( O ) | put ( O )| Offer (O, timeout, timeUnit)|
   | Deletion |   remove ( O ) |  poll ()    |  take () | poll (O, timeout, timeUnit) |
   | Examine  |    element ()  |  peek ()    |
+
+## Maps
+|         Property             |          HashMap            |            TreeMap                      |    LinkedHashMap    |
+|:-----------------------------|:---------------------------:|:---------------------------------------:|:-------------------:|
+|          Order               |No guarantee for the order   |Sorted according to the natural ordering |    Insertion order  |
+| get/put/remove/ containsKey  |           O (1)             |              O (log n)                  |        O (1)        |
+|         Interface            |           Map               |       Map / NavigableMap/ SortedMap     |         Map         |
+|     Null value & keys        |         allowed             |              only values                |       allowed       |
+|      Implementation          |         Buckets             |            Red-Black trees              |Double-linked buckets|
+|      IsSynchronised          |     Not Synchronised        |            Not Synchronised             |  Not Synchronised   |
