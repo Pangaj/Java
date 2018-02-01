@@ -3,7 +3,7 @@
 - [Blocking Queues](#blocking-queues)
 - [Maps](#maps)
 - [Compare i7 vs Xeon processor](#compare-i7-vs-xeon-processor)
-- [HashMap - Why not thread safe?](#HashMap---Why-not-thread-safe?)
+- [Why HashMap is not thread safe?](#Why-hashMap-is-not-thread-safe)
 
 ## Blocking Queues
 * A blocking queue is a queue that **blocks**,
@@ -139,7 +139,7 @@
       - A process essentially **doubling the CPU cores through the creation of virtual cores**
       - Where i5 processors do not, many users shopping in this price range may find the Xeons to be a better value, assuming their specific application supports these virtual cores
 
-## HashMap - Why not thread safe?
+## Why HashMap is not thread safe
 - In general, HashMap uses **HashFunction** to compute index into array of buckets and sets
 - Most hashTable desinged imprefect HashFunction, which cause **collision**, where *same index for more than one key used widely because of more efficient*
 
