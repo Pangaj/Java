@@ -1,5 +1,6 @@
 import java.io.*;
 
+
 public class WriteInMultiFiles {
     private File fileA;
     private File fileB;
